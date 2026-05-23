@@ -1,0 +1,67 @@
+/* Reset & Global */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Gradasi seperti Gambar 2 */
+.main-wrapper {
+    min-height: calc(100vh - 56px); /* Tinggi layar dikurangi tinggi navbar */
+    background: radial-gradient(circle at center, #2c3e50 0%, #000000 100%);
+}
+
+/* Styling Navbar */
+.custom-nav {
+    background-color: #0d6efd; /* Biru cerah */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Card Login yang lebih smooth */
+.login-card {
+    background-color: #5d6770; /* Abu-abu sesuai gambar 2 */
+    border-radius: 20px; /* Lebih membulat */
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s ease;
+}
+
+.login-card h2 {
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* Input Styles */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.input-group-text {
+    border-radius: 8px 0 0 8px;
+}
+
+/* Tombol Masuk */
+.btn-masuk {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+}
+
+.btn-masuk:hover {
+    background-color: #eab000;
+    transform: translateY(-2px);
+}

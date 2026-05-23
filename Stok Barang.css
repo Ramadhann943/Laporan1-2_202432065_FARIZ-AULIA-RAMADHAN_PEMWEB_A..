@@ -1,0 +1,91 @@
+/* General Style */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #589db1; 
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.2rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.main-nav a.active {
+    background-color: white;
+    color: #589db1;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    flex: 1; /* Membuat main memenuhi ruang agar footer tetap di bawah */
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+/* Table Style */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.styled-table thead tr {
+    background-color: #589db1;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Footer Nama - Rata Tengah */
+.footer-name {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.footer-name p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,99 @@
+/* Gaya Umum & Sticky Footer */
+html, body {
+    height: 100%; /* Penting agar tinggi halaman terhitung penuh */
+    margin: 0;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #ffffff; 
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1 0 auto; /* Mendorong footer ke bawah */
+}
+
+/* Header & Navigasi */
+header { 
+    background: #2c3e50; 
+    color: white; 
+    padding: 25px 0 15px 0; 
+    text-align: center; 
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.main-nav a.active { 
+    background: #3498db; 
+    color: white;
+}
+
+/* Konten Utama */
+main { 
+    padding: 30px 2rem; 
+    max-width: 900px; 
+    margin: auto; 
+}
+
+.section-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* Gaya Tabel */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.inventory-table th { 
+    background-color: #3498db; 
+    color: white; 
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #ffffff;
+}
+
+.inventory-table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.inventory-table tr:nth-child(even) { 
+    background-color: #f9f9f9; 
+}
+
+/* Gaya Footer (Paling Bawah) */
+.footer-custom {
+    flex-shrink: 0; /* Mencegah footer menciut */
+    background-color: #262626; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-custom p {
+    margin: 0;
+    font-size: 0.95rem;
+}
